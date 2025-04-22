@@ -14,6 +14,10 @@ setup(
             "backtest-engine=backtester.cli:main"
         ]
     },
+    include_package_data=True,
+    package_data={
+        "your_package": ["data/*"]
+    },
     author="Hongyi Wang",
     description="Short description of your package",
     long_description=open("README.md").read(),
